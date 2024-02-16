@@ -47,13 +47,21 @@ I managed to find vertical components for the Break Out PCB's so I could mount t
 
 you will notice that the component board provides every signal via RCA connectors to the back of the Xbox and it has a gap on either side where I would suggest you could place something else there like a 3.5mm vertical socket to power an external HDMI adaptor.
 
+## Variants
+I have modified the original v2 design with just some minor changes to do with the weird package format 2n2222a transistors I originally brought that I could not find again on aliexpress.
+I have created two new V4 design's, one top mounted option for use with the Open XHD project (currently unfinished) and a new design with a greatly simplified sync buffer circuit, be aware that both these options currently are un tested and released "as is"
+
+## Eagle library's
+Along with v3 and v4 models I decided to create a proper library for the AVIP footprints and create an actual schematic as I did the v1 and 2 designs straight from a PCB layout with the footprint done with vias on the board, yes shocking I know but I feel much better now with the later designs that someone can mess with them with a lot less difficulty.
+
+
 ## Notes
 I have made a proto type V1 board and have sold a few and can be considered tested but I have not made a v2 design the version 2 design just adds a few features an components but is basically unchanged from a design perspective.
 list of Changes:
   * resistors on the serial data lines to force the PICAXE to start-up in RUN mode with out an external jumper.
   * Mode select current limiting resistors for the AV pack mode lines (thanks Psycho-Chewbacca for the tip here).
   * + and - terminal for programming outside of the console.
-  * capacitor added to make PCB fit nicer on V1.6 consoles.
+  * capacitor added to make PCB fit nicer on V1.6 consoles (bottom variant only).
   * added notch to clear the support on the bottom of the case (also spaced apart the RF connectors).
   * reset line to LPC port to reboot PICAXE on reboot of console.
   * upped resistor sizes to make hand soldering possible (I found this out the hard way)
