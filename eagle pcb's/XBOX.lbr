@@ -567,9 +567,13 @@
 <package name="SMT-JUMPER" urn="urn:adsk.eagle:footprint:39260/1" locally_modified="yes">
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.25" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="2" x="0.25" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" cream="no"/>
-<rectangle x1="-0.75" y1="-0.5" x2="0.75" y2="0.5" layer="31"/>
+<rectangle x1="0.072" y1="-0.306" x2="0.528" y2="0.306" layer="1"/>
+<rectangle x1="-0.54" y1="-0.306" x2="-0.084" y2="0.306" layer="1"/>
+<rectangle x1="-0.54" y1="-0.306" x2="-0.084" y2="0.306" layer="31"/>
+<rectangle x1="0.072" y1="-0.306" x2="0.528" y2="0.306" layer="31" rot="R180"/>
+<rectangle x1="-0.588" y1="-0.348" x2="0.588" y2="0.348" layer="29"/>
+<smd name="2" x="-0.312" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="1" x="0.3" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
 </package>
 <package name="U.FL">
 <wire x1="1.3" y1="0.7" x2="1.3" y2="2.1" width="0.2032" layer="21"/>
@@ -708,7 +712,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <text x="-3.81" y="-20.955" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-3.81" y="19.05" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1_VDD" x="-7.62" y="15.24" visible="pad" length="middle" direction="pwr"/>
-<pin name="13_M3" x="0" y="20.32" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="13_M3" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="2_RA" x="-7.62" y="12.7" visible="pad" length="middle" direction="pas"/>
 <pin name="14_G" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="3_LA" x="-7.62" y="10.16" visible="pad" length="middle" direction="pas"/>
@@ -730,7 +734,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <pin name="11_M2" x="-7.62" y="-10.16" visible="pad" length="middle" direction="pas"/>
 <pin name="23_CVBS" x="7.62" y="-10.16" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="12_G" x="-7.62" y="-12.7" visible="pad" length="middle" direction="pas"/>
-<pin name="25_VSS" x="7.62" y="-12.7" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="24_VSS" x="7.62" y="-12.7" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="1_SH" x="7.62" y="17.78" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="2_SH" x="7.366" y="-15.24" visible="pad" length="middle" direction="pas" rot="R180"/>
 </symbol>
@@ -1038,7 +1042,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <connect gate="G$1" pin="21_CVBS_G" pad="21_CVBS_G"/>
 <connect gate="G$1" pin="22_G/Y" pad="22_G/Y"/>
 <connect gate="G$1" pin="23_CVBS" pad="23_CVBS"/>
-<connect gate="G$1" pin="25_VSS" pad="24_VSS"/>
+<connect gate="G$1" pin="24_VSS" pad="24_VSS"/>
 <connect gate="G$1" pin="2_RA" pad="2_RA"/>
 <connect gate="G$1" pin="2_SH" pad="2_SH"/>
 <connect gate="G$1" pin="3_LA" pad="3_LA"/>
@@ -1071,7 +1075,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/SSM2166.pdf</des
 <connect gate="G$1" pin="21_CVBS_G" pad="21_CVBS_G"/>
 <connect gate="G$1" pin="22_G/Y" pad="22_G/Y"/>
 <connect gate="G$1" pin="23_CVBS" pad="23_CVBS"/>
-<connect gate="G$1" pin="25_VSS" pad="24_VSS"/>
+<connect gate="G$1" pin="24_VSS" pad="24_VSS"/>
 <connect gate="G$1" pin="2_RA" pad="2_RA"/>
 <connect gate="G$1" pin="2_SH" pad="2_SH"/>
 <connect gate="G$1" pin="3_LA" pad="3_LA"/>

@@ -226,9 +226,13 @@
 <package name="SMT-JUMPER" urn="urn:adsk.eagle:footprint:39260/1" locally_modified="yes">
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.25" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R270" stop="no" cream="no"/>
-<smd name="2" x="0.25" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" cream="no"/>
-<rectangle x1="-0.75" y1="-0.5" x2="0.75" y2="0.5" layer="31"/>
+<rectangle x1="0.072" y1="-0.306" x2="0.528" y2="0.306" layer="1"/>
+<rectangle x1="-0.54" y1="-0.306" x2="-0.084" y2="0.306" layer="1"/>
+<rectangle x1="-0.54" y1="-0.306" x2="-0.084" y2="0.306" layer="31"/>
+<rectangle x1="0.072" y1="-0.306" x2="0.528" y2="0.306" layer="31" rot="R180"/>
+<rectangle x1="-0.588" y1="-0.348" x2="0.588" y2="0.348" layer="29"/>
+<smd name="2" x="-0.312" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="1" x="0.3" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" thermals="no" cream="no"/>
 </package>
 <package name="SOT23-6">
 <description>&lt;b&gt;SOT-23&lt;/b&gt; - DBV&lt;p&gt;
@@ -9635,31 +9639,31 @@ Source: AVX .. aphvc.pdf</description>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="H_SYNC_IN" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
-<part name="H_SYNC_OUT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
-<part name="V_SYNC_IN" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="HS_IN" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="HS_OUT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="VS_IN" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="V_SYNC_OUT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="VS_OUT" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1M"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1M"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1M"/>
-<part name="SPEAK" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
-<part name="TOGGLE" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="S" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="T" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1M"/>
-<part name="RESET" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="R" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="SUPPLY13" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="VCC2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
-<part name="J4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0ohm"/>
+<part name="+" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="L1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0ohm"/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="SUPPLY14" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="PROG" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="P" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="A" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="B" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="22k"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10k"/>
 <part name="SUPPLY15" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="RING" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
+<part name="RI" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nf"/>
 <part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP07SQ" package3d_urn="urn:adsk.eagle:package:27955/1" value=""/>
 <part name="U2" library="XBOX" deviceset="SN74LVC2G17" device="DBV"/>
@@ -9690,15 +9694,15 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY7" gate="GND" x="81.28" y="35.56" smashed="yes">
 <attribute name="VALUE" x="79.375" y="32.385" size="1.778" layer="96"/>
 </instance>
-<instance part="H_SYNC_IN" gate="G$1" x="139.7" y="55.88" smashed="yes">
+<instance part="HS_IN" gate="G$1" x="139.7" y="55.88" smashed="yes">
 <attribute name="NAME" x="138.43" y="57.15" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="140.97" y="54.61" size="1.778" layer="97"/>
 </instance>
-<instance part="H_SYNC_OUT" gate="G$1" x="180.34" y="55.88" smashed="yes">
+<instance part="HS_OUT" gate="G$1" x="180.34" y="55.88" smashed="yes">
 <attribute name="NAME" x="179.07" y="57.15" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="181.61" y="54.61" size="1.778" layer="97"/>
 </instance>
-<instance part="V_SYNC_IN" gate="G$1" x="139.7" y="48.26" smashed="yes">
+<instance part="VS_IN" gate="G$1" x="139.7" y="48.26" smashed="yes">
 <attribute name="NAME" x="138.43" y="49.53" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="140.97" y="46.99" size="1.778" layer="97"/>
 </instance>
@@ -9708,7 +9712,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="P+3" gate="VCC" x="172.72" y="73.66" smashed="yes">
 <attribute name="VALUE" x="170.18" y="71.12" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="V_SYNC_OUT" gate="G$1" x="180.34" y="48.26" smashed="yes">
+<instance part="VS_OUT" gate="G$1" x="180.34" y="48.26" smashed="yes">
 <attribute name="NAME" x="179.07" y="49.53" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="181.61" y="46.99" size="1.778" layer="97"/>
 </instance>
@@ -9724,11 +9728,11 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="85.09" y="80.2386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="85.09" y="75.438" size="1.778" layer="96"/>
 </instance>
-<instance part="SPEAK" gate="G$1" x="63.5" y="17.78" smashed="yes">
+<instance part="S" gate="G$1" x="63.5" y="17.78" smashed="yes">
 <attribute name="NAME" x="62.23" y="19.05" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="64.77" y="16.51" size="1.778" layer="97"/>
 </instance>
-<instance part="TOGGLE" gate="G$1" x="71.12" y="15.24" smashed="yes">
+<instance part="T" gate="G$1" x="71.12" y="15.24" smashed="yes">
 <attribute name="NAME" x="69.85" y="16.51" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="72.39" y="13.97" size="1.778" layer="97"/>
 </instance>
@@ -9736,18 +9740,18 @@ Source: AVX .. aphvc.pdf</description>
 <attribute name="NAME" x="62.23" y="11.6586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.23" y="6.858" size="1.778" layer="96"/>
 </instance>
-<instance part="RESET" gate="G$1" x="78.74" y="12.7" smashed="yes">
+<instance part="R" gate="G$1" x="78.74" y="12.7" smashed="yes">
 <attribute name="NAME" x="77.47" y="13.97" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="80.01" y="11.43" size="1.778" layer="97"/>
 </instance>
 <instance part="SUPPLY13" gate="GND" x="55.88" y="-5.08" smashed="yes">
 <attribute name="VALUE" x="53.975" y="-8.255" size="1.778" layer="96"/>
 </instance>
-<instance part="VCC2" gate="G$1" x="2.54" y="20.32" smashed="yes">
+<instance part="+" gate="G$1" x="2.54" y="20.32" smashed="yes">
 <attribute name="NAME" x="1.27" y="21.59" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="3.81" y="19.05" size="1.778" layer="97"/>
 </instance>
-<instance part="J4" gate="G$1" x="15.24" y="35.56" smashed="yes" rot="R90">
+<instance part="L1" gate="G$1" x="15.24" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.7414" y="31.75" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="18.542" y="31.75" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -9757,7 +9761,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY14" gate="GND" x="2.54" y="-7.62" smashed="yes">
 <attribute name="VALUE" x="0.635" y="-10.795" size="1.778" layer="96"/>
 </instance>
-<instance part="PROG" gate="G$1" x="-10.16" y="20.32" smashed="yes">
+<instance part="P" gate="G$1" x="-10.16" y="20.32" smashed="yes">
 <attribute name="NAME" x="-11.43" y="21.59" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="-8.89" y="19.05" size="1.778" layer="97"/>
 </instance>
@@ -9780,7 +9784,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="SUPPLY15" gate="GND" x="-10.16" y="-20.32" smashed="yes">
 <attribute name="VALUE" x="-12.065" y="-23.495" size="1.778" layer="96"/>
 </instance>
-<instance part="RING" gate="G$1" x="-25.4" y="2.54" smashed="yes">
+<instance part="RI" gate="G$1" x="-25.4" y="2.54" smashed="yes">
 <attribute name="NAME" x="-26.67" y="3.81" size="1.778" layer="95"/>
 <attribute name="TP_SIGNAL_NAME" x="-24.13" y="1.27" size="1.778" layer="97"/>
 </instance>
@@ -9880,7 +9884,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="172.72" y="58.42"/>
 </segment>
 <segment>
-<pinref part="J4" gate="G$1" pin="2"/>
+<pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="15.24" y1="40.64" x2="15.24" y2="43.18" width="0.1524" layer="91"/>
 </segment>
@@ -9934,21 +9938,21 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="H_SYNC_IN" class="0">
 <segment>
-<pinref part="H_SYNC_IN" gate="G$1" pin="TP"/>
+<pinref part="HS_IN" gate="G$1" pin="TP"/>
 <wire x1="139.7" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="1A"/>
 </segment>
 </net>
 <net name="H_SYNC_OUT" class="2">
 <segment>
-<pinref part="H_SYNC_OUT" gate="G$1" pin="TP"/>
+<pinref part="HS_OUT" gate="G$1" pin="TP"/>
 <wire x1="172.72" y1="53.34" x2="180.34" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="1Y"/>
 </segment>
 </net>
 <net name="V_SYNC_OUT" class="2">
 <segment>
-<pinref part="V_SYNC_OUT" gate="G$1" pin="TP"/>
+<pinref part="VS_OUT" gate="G$1" pin="TP"/>
 <wire x1="172.72" y1="45.72" x2="180.34" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="2Y"/>
 </segment>
@@ -10013,14 +10017,14 @@ Source: AVX .. aphvc.pdf</description>
 <net name="SPEAK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OP0/SERO"/>
-<pinref part="SPEAK" gate="G$1" pin="TP"/>
+<pinref part="S" gate="G$1" pin="TP"/>
 <wire x1="50.8" y1="15.24" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TOGGLE" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="OUTPUT1"/>
-<pinref part="TOGGLE" gate="G$1" pin="TP"/>
+<pinref part="T" gate="G$1" pin="TP"/>
 <wire x1="50.8" y1="12.7" x2="71.12" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -10034,20 +10038,20 @@ Source: AVX .. aphvc.pdf</description>
 <net name="RESET" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="RESET" gate="G$1" pin="TP"/>
+<pinref part="R" gate="G$1" pin="TP"/>
 <wire x1="71.12" y1="10.16" x2="78.74" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VDD" class="0">
 <segment>
 <wire x1="15.24" y1="17.78" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="J4" gate="G$1" pin="1"/>
+<pinref part="L1" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="30.48" x2="15.24" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="27.94" x2="30.48" y2="27.94" width="0.1524" layer="91"/>
 <junction x="15.24" y="27.94"/>
 <pinref part="U1" gate="G$1" pin="VDD"/>
-<pinref part="VCC2" gate="G$1" pin="TP"/>
+<pinref part="+" gate="G$1" pin="TP"/>
 <wire x1="22.86" y1="17.78" x2="15.24" y2="17.78" width="0.1524" layer="91"/>
 <junction x="15.24" y="17.78"/>
 <wire x1="15.24" y1="17.78" x2="2.54" y2="17.78" width="0.1524" layer="91"/>
@@ -10056,7 +10060,7 @@ Source: AVX .. aphvc.pdf</description>
 <net name="PROG" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="SERIN"/>
-<pinref part="PROG" gate="G$1" pin="TP"/>
+<pinref part="P" gate="G$1" pin="TP"/>
 <wire x1="22.86" y1="15.24" x2="-10.16" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="15.24" width="0.1524" layer="91"/>
@@ -10088,7 +10092,7 @@ Source: AVX .. aphvc.pdf</description>
 <junction x="-10.16" y="-2.54"/>
 <wire x1="-10.16" y1="-2.54" x2="-25.4" y2="-2.54" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-2.54" x2="-25.4" y2="0" width="0.1524" layer="91"/>
-<pinref part="RING" gate="G$1" pin="TP"/>
+<pinref part="RI" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="M1S" class="0">
@@ -10117,7 +10121,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="V_SYNC_IN" class="0">
 <segment>
-<pinref part="V_SYNC_IN" gate="G$1" pin="TP"/>
+<pinref part="VS_IN" gate="G$1" pin="TP"/>
 <wire x1="139.7" y1="45.72" x2="147.32" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="2A"/>
 </segment>
