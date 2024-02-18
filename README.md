@@ -108,7 +108,29 @@ VGA break out board:
 
 proto type v1:
 
-![PROTO](https://github.com/professor-jonny/Xbox-AVIP-mod/raw/main/pictures/prototype.JPG)
+![PROTO v1](https://github.com/professor-jonny/Xbox-AVIP-mod/raw/main/pictures/prototype.JPG)
+
+proto type v3:
+
+![PROTO v3](https://github.com/professor-jonny/Xbox-AVIP-mod/blob/main/pictures/avip-mod%20v3.png)
+
+proto type v4:
+
+![PROTO v4](https://github.com/professor-jonny/Xbox-AVIP-mod/blob/main/pictures/avip-mod%20v4.png)
+
+proto type v4 top:
+
+![PROTO v4 top](https://github.com/professor-jonny/Xbox-AVIP-mod/blob/main/pictures/avip-mod%20v4%20top.png)
+
+
+
+
+
+
+
+
+
+
 
 Wired to a component to HDMI adaptor:
 
